@@ -2,6 +2,24 @@
 
 This repository contains analysis and test code for PIXET-related studies.
 
+## Requirements
+
+The analysis code requires the following Python libraries:
+
+- `numpy`
+- `matplotlib`
+- `uproot`
+- `awkward`
+
+They can be installed via `pip`:
+
+```bash
+pip install numpy matplotlib uproot awkward
+# or conda:
+conda install -c conda-forge numpy matplotlib uproot awkward
+```
+
+
 ## Contents
 - Scripts transfer .clog into .root files.
 - Draw plots.
