@@ -1,0 +1,11 @@
+# ROOT files
+*.root
+
+# Log files
+*.clog
+
+# Images
+*.png
+
+# macOS
+.DS_Store
