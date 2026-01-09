@@ -21,9 +21,9 @@ conda install -c conda-forge numpy matplotlib uproot awkward
 
 
 ## Contents
-- Scripts transfer .clog into .root files.
-- Draw plots.
-- Do analysis(remove Fluorescence)
+- `convert_clog_to_root.py` : transfer .clog into .root files.
+- `draw_under40_plot.py` : Draw plots.
+- `analyze_remove_flu.py` : Do analysis(remove Fluorescence), and draw new plots.
 
 ## Notes
 - Large binary files (e.g. `.root`, `.png`, `.clog`) are not tracked by git.
