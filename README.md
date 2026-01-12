@@ -24,6 +24,7 @@ conda install -c conda-forge numpy matplotlib uproot awkward
 - `convert_clog_to_root.py` : transfer .clog into .root files.
 - `draw_under40_plot.py` : Draw plots.
 - `analyze_remove_flu.py` : Do analysis(remove Fluorescence), and draw new plots.
+- `new_remove_flu__and_save_root.py` : Modified remove Fluorescence(in case more than 1 Fluorescence clusters in 1 event), draw new plots, and save root files. `analyze_remove_flu.py` pick the minimal cluster_energy<30 and cluster_ncells<=2 cluster as Fluorescence cluster, but `new_remove_flu__and_save_root.py` pick all  cluster_energy<30 and cluster_ncells<=2 clusters as Fluorescence clusters.
 
 ## Notes
 - Large binary files (e.g. `.root`, `.png`, `.clog`) are not tracked by git.

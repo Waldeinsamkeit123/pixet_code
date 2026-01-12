@@ -96,7 +96,7 @@ def analyze_root(root_file):
         
         #plot
         plt.figure(figsize=(8, 6))
-        plt.hist(new_energies, bins=50, range=(0, 500), alpha=0.7, color='blue', edgecolor='black')
+        plt.hist(new_energies, bins=100, range=(0, 500), alpha=0.7, color='blue', edgecolor='black')
         plt.xlabel('New Cluster Energy (keV)')
         plt.ylabel('Counts')
         plt.title('Distribution of New Cluster Energies After Filtering and Merging')
