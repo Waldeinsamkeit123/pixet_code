@@ -143,4 +143,4 @@ def convert_clog_to_root(input_file, output_file):
     print(f"转换成功！输出文件：{output_file}")
 
 if __name__ == "__main__":
-    convert_clog_to_root("./TEST-14000-ENERGY.clog", "./TEST-14000-ENERGY.root")
+    convert_clog_to_root("./Am_600s.clog", "./Am_600s.root")

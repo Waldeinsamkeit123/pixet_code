@@ -67,14 +67,14 @@ if sample_vals:
     print(f"所有样本范围: {min(sample_vals):.1f} - {max(sample_vals):.1f} keV")
 
 if count_filtered == 0:
-    print("错误：无数据在范围内。调整过滤或检查单位（keV?）。")
+    print("错误:无数据在范围内。调整过滤或检查单位(keV?）。")
     # 打印更多样本以诊断
     print("扩展样本 (前20):", sample_vals[:20])
     sys.exit(1)
 
 # 4. 构建模型 (高斯信号 + 线性本底)
 mean = ROOT.RooRealVar("mean", "mean", 59.5, 55, 65)  # 紧缩 Am-241 峰
-sigma = ROOT.RooRealVar("sigma", "sigma", 1.5, 0.5, 3.0)  # 典型分辨率
+sigma = ROOT.RooRealVar("sigma", "sigma", 1.5, 0.5, 5.0)  # 典型分辨率
 gauss = ROOT.RooGaussian("gauss", "signal", energy_var, mean, sigma)
 
 # 线性本底: a0 + a1*x
